@@ -22,7 +22,7 @@ or run
 ## Programming Strategies
 This project uses some strategies with respect to how the DNA is translated to its phenotype.
 
-![alt text](https://github.com/justinmacp/NAS_via_GeneticAlgorithms/blob/master/GenotoPheno.png)
+![Translation scheme](https://github.com/justinmacp/NAS_via_GeneticAlgorithms/blob/master/GenotoPheno.png)
 
 The genotype of an individual consists of 1 + 3 * N values, where N is the network depth. Since the problem is an image recogntion problem, it reqires a feature extraction stage, then a flattening layer and then a fully connected stage to perform the classifcation.
 
