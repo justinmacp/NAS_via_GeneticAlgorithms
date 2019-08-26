@@ -1,7 +1,9 @@
 # Genetic Algorithms for Neural Architecture Search
 
 ## Introduction
-This project performs neural architecture search via various evolution strategies (crossover, mutation and selection).  It performs an NAS on a shallow CNN to be trained on the CIFAR-10 dataset. Also various strategies are 
+This project performs neural architecture search via various evolution strategies (crossover, mutation and selection).  It performs an NAS on a shallow CNN to be trained on the CIFAR-10 dataset.
+
+This code can be used to find the perfect NN for your specific dataset.
 
 ## Requirements
 
