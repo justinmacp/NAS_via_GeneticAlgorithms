@@ -30,25 +30,28 @@ The first entry in the DNA determines the layer number before which the flatteni
 
 First value of the triplet: determines layer type depending on the stage it is in (feature extraction or classification):
 
-Value | Feature extraction | Classifiaction
-0 | Conv | Dense
-1 | Dropout | Dropout
-2 | Pooling | Gaussian Noise
+| Value | Feature extraction | Classifiaction |
+| --- | --- | --- |
+| 0 | Conv | Dense |
+| 1 | Dropout | Dropout |
+| 2 | Pooling | Gaussian Noise |
 
 The second value of the triplet determines a parameter of the layer depending on the layer. It's a number from 0 to 9:
 
-Layer type | Parameter (p)
-Conv | 2 * p = number of filters
-Dense | 10 * p = number of neurons
-Dropout | 0.1 * p = dropout rate
-Pooling | 2 + p = stride
-Gaussian Noise | 0.1 * p = standard deviation
+| Layer type | Parameter (p) |
+| --- | --- | 
+| Conv | 2 * p = number of filters |
+| Dense | 10 * p = number of neurons |
+| Dropout | 0.1 * p = dropout rate |
+| Pooling | 2 + p = stride |
+| Gaussian Noise | 0.1 * p = standard deviation |
 
 The third value of the triplet determines another parameter of the layer. It is a number from 0 to 3:
 
-Layer type | Parameter (q)
-Conv | 2 * q + 1 = kernel size
-Pooling | pooling type (max if less than 2, average otherwise)
+| Layer type | Parameter (q) |
+| --- | --- | 
+| Conv | 2 * q + 1 = kernel size |
+| Pooling | pooling type (max if less than 2, average otherwise) |
 
 The other layers dont require a second parameter. 
 
